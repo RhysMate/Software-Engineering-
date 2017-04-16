@@ -7,8 +7,6 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Scanner;
 import java.util.Set;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 /**
  * This is the class that knows the Kiwi Island game rules and state
@@ -58,7 +56,6 @@ public class Game
         loseMessage = "";
         playerMessage = "";
         notifyGameEventListeners();
-      
     }
 
     /***********************************************************************************************************************
@@ -857,11 +854,6 @@ public class Game
     private String winMessage = "";
     private String loseMessage  = "";
     private String playerMessage  = "";   
-     ImageIcon image1;
-     JLabel label1;
-    
-    
-
 
     
 

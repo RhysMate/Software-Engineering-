@@ -1,8 +1,6 @@
 
 package nz.ac.aut.ense701.gameModel;
 
-import javax.swing.ImageIcon;
-
 /**
  * Kiwi represents a kiwi living on the island
  * @author AS
@@ -22,6 +20,7 @@ public class Kiwi  extends Fauna
         super(pos, name, description);
         counted = false;
     } 
+    
     /**
     * Count this kiwi
     */
@@ -36,7 +35,6 @@ public class Kiwi  extends Fauna
     public boolean counted() {
         return counted;
     }
-    
 
 
     @Override

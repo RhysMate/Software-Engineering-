@@ -55,18 +55,6 @@ public class GridSquarePanel extends javax.swing.JPanel
         {
             // Set the text of the JLabel according to the occupant
             lblText.setText(game.getOccupantStringRepresentation(row,column));
-            if(squareExplored && row == 5  && column == 4) {
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/apple2_1.png")));  // URL 
-            }
-            if(squareExplored && row == 2  && column == 4) {
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/burger_1.jpg")));  // URL 
-            }
-            if(squareExplored && row == 6  && column == 7) {
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/juice_1.jpg")));  // URL 
-            }
-            if(squareExplored && row == 4  && column == 0) {
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/crab.jpg")));  // URL 
-            }
             // Set the colour. 
             if ( squareVisible && !squareExplored ) 
             {
