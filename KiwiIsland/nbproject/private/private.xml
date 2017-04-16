@@ -3,6 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="9"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Terrain.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Game.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gui/GridSquarePanel.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Item.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Kiwi.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/Island.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/GameState.java</file>
+            <file>file:/C:/Users/Rhys/Desktop/KiwiIsland/src/nz/ac/aut/ense701/gameModel/ImagePanel.java</file>
+        </group>
     </open-files>
 </project-private>
