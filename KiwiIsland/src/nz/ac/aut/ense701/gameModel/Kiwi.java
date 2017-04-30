@@ -41,5 +41,5 @@ public class Kiwi  extends Fauna
     public String getStringRepresentation() 
     {
         return "K";
-    }     
+    }
 }

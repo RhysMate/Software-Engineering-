@@ -189,6 +189,16 @@ public class Game
     }
     
     /**
+     * Get Name string for occupants of this position
+     * @param row
+     * @param column
+     * @return occupant string for this position row, column
+     */
+    public String getOccupantName(int row, int column) {
+        return island.getOccupantName(new Position(island, row, column));
+    }
+    
+    /**
      * Get values from player for GUI display
      * @return player values related to stamina and backpack.
      */
