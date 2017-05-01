@@ -1,9 +1,12 @@
 package nz.ac.aut.ense701.gui;
 
 import java.awt.Color;
+import java.util.Set;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import nz.ac.aut.ense701.gameModel.Game;
+import nz.ac.aut.ense701.gameModel.Occupant;
+import nz.ac.aut.ense701.gameModel.Position;
 import nz.ac.aut.ense701.gameModel.Terrain;
 
 /*
@@ -51,10 +54,53 @@ public class GridSquarePanel extends javax.swing.JPanel
             default  : color = Color.LIGHT_GRAY; break;
         }
         
+        /*Occupant occupant = game.getIsland().getOccupants(this.game.getIsland().getOccupants(Position.NOT_ON_ISLAND))
+        
+        if (game.getOccupantName(row, column).contains("Kiwi")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/apple2_1.png")));  // URL
+        }
+        /*if (occupants == null){
+        } else {
+            //System.out.println(occupants[0].toString());
+        }*/
         if ( squareExplored || squareVisible )
         {
             // Set the text of the JLabel according to the occupant
             lblText.setText(game.getOccupantStringRepresentation(row,column));
+            if (game.getOccupantName(row, column).contains("Apple")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/apple2_1.png")));  // URL
+            }
+            else if (game.getOccupantName(row, column).contains("Burger")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/burger_1.jpg")));  // URL
+            }
+            else if (game.getOccupantName(row, column).contains("Juice")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/juice_1.jpg")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Crab")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/crab.jpg")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Kiwi")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/kiwi_2.png")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Kiore")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/kiore_rat_1.png")));  // URL
+            }
+            else if (game.getOccupantName(row, column).contains("Possum")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/possum_1.gif")));  // URL
+            }
+            else if (game.getOccupantName(row, column).contains("Screwdriver")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/screwdriver_1.png")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Stoat")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/stoat_1.jpg")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Rat")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/rat_1.png")));  // URL 
+            }
+            else if (game.getOccupantName(row, column).contains("Cat")){
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/cat_1.png")));  // URL 
+            }
+
             // Set the colour. 
             if ( squareVisible && !squareExplored ) 
             {
@@ -71,6 +117,7 @@ public class GridSquarePanel extends javax.swing.JPanel
         else
         {
             lblText.setText("");
+            lblText.setIcon(null);
             lblText.setBackground(null);
             setBorder(normalBorder);
         }
