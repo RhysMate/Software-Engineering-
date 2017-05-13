@@ -69,36 +69,47 @@ public class GridSquarePanel extends javax.swing.JPanel
             lblText.setText(game.getOccupantStringRepresentation(row,column));
             if (game.getOccupantName(row, column).contains("Apple")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/apple2_1.png")));  // URL
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Burger")){
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/burger_1.jpg")));  // URL
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/burger_1.png")));  // URL
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Juice")){
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/juice_1.jpg")));  // URL 
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/juice_1.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Crab")){
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/crab.jpg")));  // URL 
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/crab.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Kiwi")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/kiwi_2.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Kiore")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/kiore_rat_1.png")));  // URL
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Possum")){
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/possum_1.gif")));  // URL
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/possum_1.png")));  // URL
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Screwdriver")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/screwdriver_1.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Stoat")){
-                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/stoat_1.jpg")));  // URL 
+                lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/stoat_1.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Rat")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/rat_1.png")));  // URL 
+                lblText.setText("");  // URL 
             }
             else if (game.getOccupantName(row, column).contains("Cat")){
                 lblText.setIcon(new javax.swing.ImageIcon(getClass().getResource("/nz/ac/aut/ense701/images/cat_1.png")));  // URL 
+                lblText.setText("");  // URL 
             }
 
             // Set the colour. 
@@ -118,7 +129,7 @@ public class GridSquarePanel extends javax.swing.JPanel
         {
             lblText.setText("");
             lblText.setIcon(null);
-            lblText.setBackground(null);
+            lblText.setBackground(Color.LIGHT_GRAY);
             setBorder(normalBorder);
         }
     }
@@ -150,6 +161,6 @@ public class GridSquarePanel extends javax.swing.JPanel
     private Game game;
     private int row, column;
     
-    private static final Border normalBorder = new LineBorder(Color.BLACK, 1);
+    private static final Border normalBorder = new LineBorder(Color.BLACK, 0);
     private static final Border activeBorder = new LineBorder(Color.RED, 3);
 }
